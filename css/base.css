@@ -1,46 +1,91 @@
 @font-face {
   font-display: swap;
-  font-family: 'Lato';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src:  url('../fonts/Lato-Regular.woff2') format('woff2'),
-        url('../fonts/Lato-Regular.woff') format('woff');
+  src:  url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-regular.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Lato';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src:  url('../fonts/Lato-Medium.woff2') format('woff2'),
-        url('../fonts/Lato-Medium.woff') format('woff');
+  src:  url('../fonts/inter-v12-latin-500.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-500.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Lato';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src:  url('../fonts/Lato-Semibold.woff2') format('woff2'),
-        url('../fonts/Lato-Semibold.woff') format('woff');
+  src:  url('../fonts/inter-v12-latin-600.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-600.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  src:  url('../fonts/Georgia.woff2') format('woff2'),
-        url('../fonts/Georgia.woff') format('woff');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Georgia';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src:  url('../fonts/Georgia-Bold.woff2') format('woff2'),
-        url('../fonts/Georgia-Bold.woff') format('woff');
+  src:  url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src:  url('../fonts/roboto-v30-latin-700italic.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Avenir Next LT Pro';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  src:  url('../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  src:  url('../fonts/Avenir-Heavy.woff2') format('woff2'),
+        url('../fonts/Avenir-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src:  url('../fonts/playfair-display-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/playfair-display-v30-latin-700.woff') format('woff');
 }
 
 
@@ -147,46 +192,134 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 31px;
-  color: #484848;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
   background-color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .button {
   display: inline-block;
-  padding: 20px 50px;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
+  padding: 20px 59px 18px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.035em;
   color: #FFFFFF;
-  background-color: #01996d;
-  border-radius: 4px;
+  background: #FF6744;
+  border-radius: 46px;
 }
 
 .button:hover {
-  background-color: rgba(1, 153, 109, 0.7);
+  background-color: rgb(255, 103, 68, 0.7);
 }
 
-
 .section__title {
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 79px;
-  color: #01996D;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.04em;
 }
 
 .section__subtitle {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 38px;
+  font-family: 'Avenir Next LT Pro', 'Times New Roman', serif;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 /* Header */
 
+.page-header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header__wrapper a:hover {
+  opacity: 0.7;
+}
+
+.header__logo-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo-link {
+  display: block;
+  width: 80px;
+  height: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.header__logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 112px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header__link {
+  position: relative;
+  padding: 13px 44px 12px;
+  color: #FF6744;
+  border: 1px solid #FED4CD;
+  border-radius: 50px;
+}
+
+.header__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 177px;
+  height: 44px;
+  border: 1px solid #FED4CD;
+  border-radius: 50px;
+  transform: rotate(-14.49deg);
+}
+
+
+/* Intro */
+
+.intro {
+  padding-top: 218px;
+  height: 100vh;
+  background: linear-gradient(73.26deg, #FED4CD 0.86%, rgba(254, 212, 205, 0) 100%);
+  border-radius: 0px 0px 70px 70px;
+}
